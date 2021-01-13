@@ -17,13 +17,15 @@ const getHoursInDay = (date) => {
 };
 
 const isBetweenInclusive = (dateToCheck, startDate, endDate) => {
-  if(dateToCheck.unix() >= startDate.unix() && dateToCheck.unix() <= endDate.unix()){
+  if (
+    dateToCheck.unix() >= startDate.unix() &&
+    dateToCheck.unix() <= endDate.unix()
+  ) {
     return true;
-  }
-  else{
+  } else {
     return false;
   }
-}
+};
 
 class App extends Component {
   state = {};
@@ -32,9 +34,9 @@ class App extends Component {
     fetch(`${apiUrl}/bookings`)
       .then((response) => response.json())
       .then((bookings) => {
-        bookings.forEach((booking)=>{
+        bookings.forEach((booking) => {
           booking.duration = booking.duration / (60 * 1000);
-        })
+        });
         this.setState({ bookings });
       });
   }
@@ -47,8 +49,6 @@ class App extends Component {
     const days = 10;
     const datesToDisplay = [];
     for (let i = 0; i < days; i++) {
-      // const timelineDate = new Date(i + 1 + "Mar 2018");
-      const momentB = moment;
       const timelineDate = moment(i + 1 + "Mar 2018");
       let hasBooking = false;
       const hours = getHoursInDay(timelineDate);
@@ -105,30 +105,41 @@ class App extends Component {
                   }}
                 >
                   {dateToDisplay.timelineDate.format("L")}
-                  <div
+                  <table
                     style={{
                       display: "flex",
                       flexDirection: "column",
                       backgroundColor: "grey",
                     }}
                   >
+                    <tbody>
                     {dateToDisplay.hours.map((hourToRender, index) => {
                       let backgroundColor =
                         index % 2 === 0 ? "lightgrey" : "darkgrey";
+                      let hourHasCurrentBooking = false;
+                      let hourHasNewBooking = false;
                       if (dateToDisplay.hasBooking) {
                         if (
-                          isBetweenInclusive(hourToRender, dateToDisplay.bookingStartTime, dateToDisplay.bookingEndTime)
+                          isBetweenInclusive(
+                            hourToRender,
+                            dateToDisplay.bookingStartTime,
+                            dateToDisplay.bookingEndTime
+                          )
                         ) {
-                          backgroundColor = "green";
+                          hourHasCurrentBooking = true;
+                          // backgroundColor = "green";
                         }
                       }
                       return (
-                        <div style={{ backgroundColor }}>
-                          {hourToRender.format("LT")}
-                        </div>
+                        <tr style={{ backgroundColor }}>
+                          <td>{hourToRender.format("LT")}</td>
+                          <td style={{ width: "100px", backgroundColor: hourHasCurrentBooking ? "green" : "initial"}}></td>
+                          <td style={{width: "100px", backgroundColor: hourHasNewBooking ? "green" : "initial"}}></td>
+                        </tr>
                       );
                     })}
-                  </div>
+                    </tbody>
+                  </table>
                 </div>
               );
             })}
