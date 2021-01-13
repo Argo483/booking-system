@@ -1,6 +1,6 @@
 import moment from "moment";
 
-export const getDatesToDisplay = (bookings) => {
+export const getDatesToDisplay = (bookings, csvBookings) => {
   const days = 10;
   const datesToDisplay = [];
   for (let i = 0; i < days; i++) {

@@ -1,15 +1,22 @@
 import React, { Component } from "react";
 import Dropzone from "react-dropzone";
+import Papa from "papaparse";
 import "./App.css";
 import { BookingsTable } from "./BookingsTable";
-import {getDatesToDisplay} from "./GetDatesToDisplay";
+import { getDatesToDisplay } from "./GetDatesToDisplay";
 
 const apiUrl = "http://localhost:3001";
 
-
-
 class App extends Component {
   state = {};
+
+  constructor() {
+    super();
+    this.state = {
+      bookings: [],
+      csvBookings: [],
+    };
+  }
 
   componentWillMount() {
     fetch(`${apiUrl}/bookings`)
@@ -22,14 +29,41 @@ class App extends Component {
       });
   }
 
-  onDrop(files) {
+  onCsvParse = (results) => {
+    const csvRows = results.data;
+    csvRows.pop();
+    let csvBookings = [];
+    for (const row of csvRows) {
+      csvBookings.push({
+        time: row[0],
+        duration: row[1],
+        user_id: row[2],
+      });
+    }
+
+    this.setState({ csvBookings, ...this.state });
+    console.log(this.state);
+  };
+
+  onDrop = (files) => {
     console.log(files);
 
-    
-  }
+    Papa.parse(files[0], {
+      complete: this.onCsvParse,
+    });
+
+    // reader.onabort = () => console.log("file reading was aborted");
+    // reader.onerror = () => console.log("file reading failed");
+    // reader.onload = () => {
+    //   // Parse CSV file
+    //   csv.parse(reader.result, (err, data) => {
+    //     console.log("Parsed CSV data: ", data);
+    //   });
+    // };
+  };
 
   render() {
-    const datesToDisplay = getDatesToDisplay(this.state.bookings || []);
+    const datesToDisplay = getDatesToDisplay(this.state.bookings || [], this.state.csvBookings);
 
     return (
       <div className="App">
@@ -66,8 +100,6 @@ class App extends Component {
       </div>
     );
   }
-
-  
 }
 
 export default App;
