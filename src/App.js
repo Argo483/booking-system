@@ -24,6 +24,8 @@ class App extends Component {
 
   onDrop(files) {
     console.log(files);
+
+    
   }
 
   render() {
