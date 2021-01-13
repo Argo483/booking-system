@@ -1,31 +1,12 @@
 import React, { Component } from "react";
 import Dropzone from "react-dropzone";
 import "./App.css";
-import moment from "moment";
+import { BookingsTable } from "./BookingsTable";
+import {getDatesToDisplay} from "./GetDatesToDisplay";
 
 const apiUrl = "http://localhost:3001";
 
-const getHoursInDay = (date) => {
-  var result = [];
-  let hour = date.startOf("day");
-  result.push(hour);
-  for (var i = 0; i < 23; i++) {
-    hour = hour.clone().add(1, "hour");
-    result.push(hour);
-  }
-  return result;
-};
 
-const isBetweenInclusive = (dateToCheck, startDate, endDate) => {
-  if (
-    dateToCheck.unix() >= startDate.unix() &&
-    dateToCheck.unix() <= endDate.unix()
-  ) {
-    return true;
-  } else {
-    return false;
-  }
-};
 
 class App extends Component {
   state = {};
@@ -46,30 +27,7 @@ class App extends Component {
   }
 
   render() {
-    const days = 10;
-    const datesToDisplay = [];
-    for (let i = 0; i < days; i++) {
-      const timelineDate = moment(i + 1 + "Mar 2018");
-      let hasBooking = false;
-      const hours = getHoursInDay(timelineDate);
-      let bookingStartTime;
-      let bookingEndTime;
-      for (const booking of this.state.bookings || []) {
-        const bookingDate = moment(booking.time);
-        if (bookingDate.format("L") === timelineDate.format("L")) {
-          bookingStartTime = bookingDate;
-          bookingEndTime = bookingDate.clone().add(booking.duration, "minutes");
-          hasBooking = true;
-        }
-      }
-      datesToDisplay.push({
-        timelineDate,
-        hasBooking,
-        hours,
-        bookingStartTime,
-        bookingEndTime,
-      });
-    }
+    const datesToDisplay = getDatesToDisplay(this.state.bookings || []);
 
     return (
       <div className="App">
@@ -93,69 +51,21 @@ class App extends Component {
             );
           })}
           <p>Existing bookings timeline:</p>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            {datesToDisplay.map((dateToDisplay) => {
-              return (
-                <div
-                  style={{
-                    width: "1000px",
-                    margin: "5px",
-                    padding: "10px",
-                    backgroundColor: "mediumgrey",
-                  }}
-                >
-                  {dateToDisplay.timelineDate.format("L")}
-                  <table
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      backgroundColor: "grey",
-                    }}
-                  >
-                    <tbody>
-                    {dateToDisplay.hours.map((hourToRender, index) => {
-                      let backgroundColor =
-                        index % 2 === 0 ? "lightgrey" : "darkgrey";
-                      let hourHasCurrentBooking = false;
-                      let hourHasNewBooking = false;
-                      if (dateToDisplay.hasBooking) {
-                        if (
-                          isBetweenInclusive(
-                            hourToRender,
-                            dateToDisplay.bookingStartTime,
-                            dateToDisplay.bookingEndTime
-                          )
-                        ) {
-                          hourHasCurrentBooking = true;
-                          // backgroundColor = "green";
-                        }
-                      }
-                      return (
-                        <tr style={{ backgroundColor }}>
-                          <td>{hourToRender.format("LT")}</td>
-                          <td style={{ width: "100px", backgroundColor: hourHasCurrentBooking ? "green" : "initial"}}></td>
-                          <td style={{width: "100px", backgroundColor: hourHasNewBooking ? "green" : "initial"}}></td>
-                        </tr>
-                      );
-                    })}
-                    </tbody>
-                  </table>
-                </div>
-              );
-            })}
-          </div>
+          <BookingsTable datesToDisplay={datesToDisplay}></BookingsTable>
 
-          <div style={{ display: "flex" }}>
+          {/* <div style={{ display: "flex" }}>
             {(this.state.bookings || []).map((booking, i) => {
               const date = new Date(booking.time);
               const duration = booking.duration / (60 * 1000);
               return <div></div>;
             })}
-          </div>
+          </div> */}
         </div>
       </div>
     );
   }
+
+  
 }
 
 export default App;
