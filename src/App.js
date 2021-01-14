@@ -25,7 +25,7 @@ class App extends Component {
         bookings.forEach((booking) => {
           booking.duration = booking.duration / (60 * 1000);
         });
-        this.setState({ bookings });
+        this.setState({ bookings});
       });
   }
 
@@ -41,7 +41,7 @@ class App extends Component {
       });
     }
 
-    this.setState({ csvBookings, ...this.state });
+    this.setState({ csvBookings });
     console.log(this.state);
   };
 

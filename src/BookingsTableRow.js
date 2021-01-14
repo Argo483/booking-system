@@ -5,18 +5,29 @@ export const BookingsTableRow = ({ hourToRender, dateToDisplay, index }) => {
   let backgroundColor = index % 2 === 0 ? "lightgrey" : "darkgrey";
   let hourHasCurrentBooking = false;
   let hourHasNewBooking = false;
-  if (dateToDisplay.hasBooking) {
+  for (const booking of dateToDisplay.bookingsOnThisDay){
     if (
       isBetween(
         hourToRender,
-        dateToDisplay.bookingStartTime,
-        dateToDisplay.bookingEndTime
+        booking.startTime,
+        booking.endTime
       )
     ) {
       hourHasCurrentBooking = true;
-      // backgroundColor = "green";
     }
   }
+  for (const booking of dateToDisplay.csvBookingsOnThisDay){
+    if (
+      isBetween(
+        hourToRender,
+        booking.startTime,
+        booking.endTime
+      )
+    ) {
+      hourHasNewBooking = true;
+    }
+  }
+  
   return (
     <tr style={{ backgroundColor }}>
       <td>{hourToRender.format("LT")}</td>
