@@ -1,4 +1,5 @@
 import moment from "moment";
+import { isBetween } from "./IsBetween";
 
 export const getDatesToDisplay = (bookings, csvBookings) => {
   const days = 10;
@@ -8,6 +9,17 @@ export const getDatesToDisplay = (bookings, csvBookings) => {
     const hours = getHoursInDay(timelineDate);
     let bookingsOnThisDay = getBookingsOnDate(bookings, timelineDate);
     let csvBookingsOnThisDay = getBookingsOnDate(csvBookings, timelineDate);
+
+    for(const csvBooking of csvBookingsOnThisDay){
+      for(const booking of bookingsOnThisDay){
+        if(isBetween(csvBooking.startTime, booking.startTime, booking.endTime )){
+          csvBooking.isOverlappingBooking = true;
+        }
+        else if(isBetween(csvBooking.endTime, booking.startTime, booking.endTime)){
+          csvBooking.isOverlappingBooking = true;
+        }
+      }
+    }
 
     datesToDisplay.push({
       timelineDate,

@@ -16,6 +16,7 @@ export const BookingsTableRow = ({ hourToRender, dateToDisplay, index }) => {
       hourHasCurrentBooking = true;
     }
   }
+  let newBookingColor = "initial";
   for (const booking of dateToDisplay.csvBookingsOnThisDay){
     if (
       isBetween(
@@ -25,9 +26,13 @@ export const BookingsTableRow = ({ hourToRender, dateToDisplay, index }) => {
       )
     ) {
       hourHasNewBooking = true;
+      newBookingColor = "green";
+      if(booking.isOverlappingBooking){
+        newBookingColor = "red";
+      }
     }
   }
-  
+
   return (
     <tr style={{ backgroundColor }}>
       <td>{hourToRender.format("LT")}</td>
@@ -40,7 +45,7 @@ export const BookingsTableRow = ({ hourToRender, dateToDisplay, index }) => {
       <td
         style={{
           width: "100px",
-          backgroundColor: hourHasNewBooking ? "green" : "initial",
+          backgroundColor: newBookingColor,
         }}
       ></td>
     </tr>
