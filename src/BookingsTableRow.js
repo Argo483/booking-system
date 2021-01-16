@@ -4,7 +4,6 @@ import { isBetween } from "./IsBetween";
 export const BookingsTableRow = ({ hourToRender, dateToDisplay, index }) => {
   let backgroundColor = index % 2 === 0 ? "lightgrey" : "darkgrey";
   let hourHasCurrentBooking = false;
-  let hourHasNewBooking = false;
   for (const booking of dateToDisplay.bookingsOnThisDay){
     if (
       isBetween(
@@ -25,7 +24,6 @@ export const BookingsTableRow = ({ hourToRender, dateToDisplay, index }) => {
         booking.endTime
       )
     ) {
-      hourHasNewBooking = true;
       newBookingColor = "green";
       if(booking.isOverlappingBooking){
         newBookingColor = "red";

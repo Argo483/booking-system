@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Dropzone from "react-dropzone";
 import Papa from "papaparse";
+import axios from 'axios';
 import "./App.css";
 import { BookingsTable } from "./BookingsTable";
 import { getDatesToDisplay } from "./GetDatesToDisplay";
@@ -18,16 +19,20 @@ class App extends Component {
     };
   }
 
-  componentWillMount() {
+  fetchBookings = () => {
     fetch(`${apiUrl}/bookings`)
       .then((response) => response.json())
       .then((bookings) => {
         bookings.forEach((booking) => {
           booking.duration = booking.duration / (60 * 1000);
         });
-        this.setState({ bookings});
+        this.setState({ bookings });
       });
-  }
+  };
+
+  componentWillMount = () => {
+    this.fetchBookings();
+  };
 
   onCsvParse = (results) => {
     const csvRows = results.data;
@@ -51,22 +56,42 @@ class App extends Component {
     Papa.parse(files[0], {
       complete: this.onCsvParse,
     });
-
-    // reader.onabort = () => console.log("file reading was aborted");
-    // reader.onerror = () => console.log("file reading failed");
-    // reader.onload = () => {
-    //   // Parse CSV file
-    //   csv.parse(reader.result, (err, data) => {
-    //     console.log("Parsed CSV data: ", data);
-    //   });
-    // };
   };
 
+  onSaveBookingsClicked = () => {
+    const bookingsToPost = this.state.bookings;
+    if (this.state.csvBookings.length) {
+      for (const booking of this.state.csvBookings) {
+        if (!booking.isOverlappingBooking) {
+          bookingsToPost.push(booking);
+        }
+      }
+    }
+    axios
+      .post(`${apiUrl}/bookings`, {
+        bookings: bookingsToPost,
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
+
+  onReloadBookingsClicked = () => {
+    this.fetchBookings();
+  }
+
   render() {
-    const datesToDisplay = getDatesToDisplay(this.state.bookings || [], this.state.csvBookings);
+    const datesToDisplay = getDatesToDisplay(
+      this.state.bookings || [],
+      this.state.csvBookings
+    );
 
     return (
       <div className="App">
+        <button></button>
         <div className="App-header">
           <Dropzone accept=".csv" onDrop={this.onDrop}>
             Drag files here
@@ -86,16 +111,15 @@ class App extends Component {
               </p>
             );
           })}
+
+          <button onClick={this.onSaveBookingsClicked}>
+            Save new bookings
+          </button>
+          <button onClick={this.onReloadBookingsClicked}>
+            Reload bookings
+          </button>
           <p>Existing bookings timeline:</p>
           <BookingsTable datesToDisplay={datesToDisplay}></BookingsTable>
-
-          {/* <div style={{ display: "flex" }}>
-            {(this.state.bookings || []).map((booking, i) => {
-              const date = new Date(booking.time);
-              const duration = booking.duration / (60 * 1000);
-              return <div></div>;
-            })}
-          </div> */}
         </div>
       </div>
     );
