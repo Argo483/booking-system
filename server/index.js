@@ -14,13 +14,15 @@ let bookings = JSON.parse(fs.readFileSync('./server/bookings.json'))
   }))
 
 app.get('/bookings', (_, res) => {
+  console.log(`get: ${bookings}`)
   res.json(bookings);
 });
 
 app.use(bodyParser.json({ extended: true }));
 
 app.post('/bookings', (request, response) => {
-  console.log(request.body)
+  console.log(request.body);
+  bookings = request.body.bookings;
   response.sendStatus(200);
 });
 

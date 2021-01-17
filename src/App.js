@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Dropzone from "react-dropzone";
 import Papa from "papaparse";
-import axios from 'axios';
+import axios from "axios";
 import "./App.css";
 import { BookingsTable } from "./BookingsTable";
 import { getDatesToDisplay } from "./GetDatesToDisplay";
@@ -36,14 +36,18 @@ class App extends Component {
 
   onCsvParse = (results) => {
     const csvRows = results.data;
-    csvRows.pop();
+    // Remove heading row ("time, duration, userId")
+    csvRows.shift();
     let csvBookings = [];
     for (const row of csvRows) {
-      csvBookings.push({
-        time: row[0],
-        duration: row[1],
-        user_id: row[2],
-      });
+      const isValidRow = row.length === 3;
+      if(isValidRow){
+        csvBookings.push({
+          time: Date.parse(row[0]),
+          duration: parseInt(row[1], 10),
+          user_id: row[2],
+        });
+      }
     }
 
     this.setState({ csvBookings });
@@ -67,6 +71,7 @@ class App extends Component {
         }
       }
     }
+    console.log(`posting ${bookingsToPost}`)
     axios
       .post(`${apiUrl}/bookings`, {
         bookings: bookingsToPost,
@@ -77,11 +82,11 @@ class App extends Component {
       .catch(function (error) {
         console.log(error);
       });
-  }
+  };
 
   onReloadBookingsClicked = () => {
     this.fetchBookings();
-  }
+  };
 
   render() {
     const datesToDisplay = getDatesToDisplay(

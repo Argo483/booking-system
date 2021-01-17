@@ -5,7 +5,8 @@ export const getDatesToDisplay = (bookings, csvBookings) => {
   const days = 10;
   const datesToDisplay = [];
   for (let i = 0; i < days; i++) {
-    const timelineDate = moment(i + 1 + "Mar 2018");
+    const day = (i+1).toLocaleString(undefined, {minimumIntegerDigits: 2});
+    const timelineDate = moment(`2018-03-${day}T00:00:00`);
     const hours = getHoursInDay(timelineDate);
     let bookingsOnThisDay = getBookingsOnDate(bookings, timelineDate);
     let csvBookingsOnThisDay = getBookingsOnDate(csvBookings, timelineDate);

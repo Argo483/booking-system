@@ -4,9 +4,10 @@ import { BookingsTableRow } from "./BookingsTableRow";
 export const BookingsTable = ({ datesToDisplay }) => {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
-      {datesToDisplay.map((dateToDisplay) => {
+      {datesToDisplay.map((dateToDisplay, index) => {
         return (
           <div
+            key={index}
             style={{
               width: "1000px",
               margin: "5px",
@@ -24,11 +25,14 @@ export const BookingsTable = ({ datesToDisplay }) => {
             >
               <tbody>
                 {dateToDisplay.hours.map((hourToRender, index) => {
-                  return <BookingsTableRow
-                    hourToRender={hourToRender}
-                    dateToDisplay={dateToDisplay}
-                    index={index}
-                  ></BookingsTableRow>;
+                  return (
+                    <BookingsTableRow
+                      key={index}
+                      hourToRender={hourToRender}
+                      dateToDisplay={dateToDisplay}
+                      index={index}
+                    ></BookingsTableRow>
+                  );
                 })}
               </tbody>
             </table>
