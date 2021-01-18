@@ -1,5 +1,7 @@
 import React from "react";
 import { isBetween } from "./IsBetween";
+import PropTypes from 'prop-types';
+
 
 export const BookingsTableRow = ({ hourToRender, calendarDay, index }) => {
   let backgroundColor = index % 2 === 0 ? "lightgrey" : "darkgrey";
@@ -48,4 +50,8 @@ export const BookingsTableRow = ({ hourToRender, calendarDay, index }) => {
       ></td>
     </tr>
   );
+};
+
+BookingsTableRow.propTypes = {
+  hourToRender: PropTypes.moment, calendarDay: PropTypes.moment, index: PropTypes.number
 };
