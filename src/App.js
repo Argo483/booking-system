@@ -41,11 +41,11 @@ class App extends Component {
     let csvBookings = [];
     for (const row of csvRows) {
       const isValidRow = row.length === 3;
-      if(isValidRow){
+      if (isValidRow) {
         csvBookings.push({
           time: Date.parse(row[0]),
           duration: parseInt(row[1], 10),
-          user_id: row[2],
+          userId: row[2].trim(),
         });
       }
     }
@@ -63,15 +63,15 @@ class App extends Component {
   };
 
   onSaveBookingsClicked = () => {
-    const bookingsToPost = this.state.bookings;
+    const bookingsToPost = [...this.state.bookings];
     if (this.state.csvBookings.length) {
       for (const booking of this.state.csvBookings) {
         if (!booking.isOverlappingBooking) {
-          bookingsToPost.push(booking);
+          bookingsToPost.push({...booking});
         }
       }
     }
-    console.log(`posting ${bookingsToPost}`)
+    console.log(`posting ${bookingsToPost}`);
     axios
       .post(`${apiUrl}/bookings`, {
         bookings: bookingsToPost,
@@ -85,6 +85,7 @@ class App extends Component {
   };
 
   onReloadBookingsClicked = () => {
+    this.setState({ bookings: [], csvBookings: [] });
     this.fetchBookings();
   };
 
