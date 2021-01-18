@@ -4,7 +4,7 @@ import Papa from "papaparse";
 import axios from "axios";
 import "./App.css";
 import { BookingsTable } from "./BookingsTable";
-import { getDatesToDisplay } from "./GetDatesToDisplay";
+import { getCalendarDays } from "./getCalendarDays";
 
 const apiUrl = "http://localhost:3001";
 
@@ -90,7 +90,7 @@ class App extends Component {
   };
 
   render() {
-    const datesToDisplay = getDatesToDisplay(
+    const calendarDays = getCalendarDays(
       this.state.bookings || [],
       this.state.csvBookings
     );
@@ -125,7 +125,7 @@ class App extends Component {
             Reload bookings
           </button>
           <p>Existing bookings timeline:</p>
-          <BookingsTable datesToDisplay={datesToDisplay}></BookingsTable>
+          <BookingsTable calendarDays={calendarDays}></BookingsTable>
         </div>
       </div>
     );

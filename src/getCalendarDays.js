@@ -1,15 +1,15 @@
 import moment from "moment";
 import { isBetween } from "./IsBetween";
 
-export const getDatesToDisplay = (bookings, csvBookings) => {
+export const getCalendarDays = (bookings, csvBookings) => {
   const days = 10;
-  const datesToDisplay = [];
+  const calendarDays = [];
   for (let i = 0; i < days; i++) {
     const day = (i+1).toLocaleString(undefined, {minimumIntegerDigits: 2});
-    const timelineDate = moment(`2018-03-${day}T00:00:00`);
-    const hours = getHoursInDay(timelineDate);
-    let bookingsOnThisDay = getBookingsOnDate(bookings, timelineDate);
-    let csvBookingsOnThisDay = getBookingsOnDate(csvBookings, timelineDate);
+    const calendarDay = moment(`2018-03-${day}T00:00:00`);
+    const hours = getHoursInDay(calendarDay);
+    let bookingsOnThisDay = getBookingsOnDate(bookings, calendarDay);
+    let csvBookingsOnThisDay = getBookingsOnDate(csvBookings, calendarDay);
 
     for(const csvBooking of csvBookingsOnThisDay){
       for(const booking of bookingsOnThisDay){
@@ -22,14 +22,14 @@ export const getDatesToDisplay = (bookings, csvBookings) => {
       }
     }
 
-    datesToDisplay.push({
-      timelineDate,
+    calendarDays.push({
+      day: calendarDay,
       hours,
       bookingsOnThisDay,
       csvBookingsOnThisDay,
     });
   }
-  return datesToDisplay;
+  return calendarDays;
 };
 
 const getBookingsOnDate = (bookings, date) => {

@@ -6,17 +6,15 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(cors()); // so that app can access
 
-const convertBookingToStorageFormat = (bookingRecord) => {
+const convertBookingToStorageFormat = (bookingRecord) => {};
+
+let bookings = JSON.parse(fs.readFileSync("./server/bookings.json")).map(() => {
   return {
     time: Date.parse(bookingRecord.time),
     duration: bookingRecord.duration * 60 * 1000, // mins into ms
     userId: bookingRecord.user_id,
   };
-};
-
-let bookings = JSON.parse(fs.readFileSync("./server/bookings.json")).map(
-  convertBookingToStorageFormat
-);
+});
 
 app.get("/bookings", (_, res) => {
   console.log(`get: ${bookings}`);
@@ -32,7 +30,7 @@ const isValidBody = (body) => {
       isNaN(booking.duration) ||
       typeof booking.userId !== "string"
     ) {
-      console.log(`invalid booking: ${booking}`)
+      console.log(`invalid booking: ${booking}`);
       return false;
     }
   }

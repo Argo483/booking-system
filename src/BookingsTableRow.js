@@ -1,10 +1,10 @@
 import React from "react";
 import { isBetween } from "./IsBetween";
 
-export const BookingsTableRow = ({ hourToRender, dateToDisplay, index }) => {
+export const BookingsTableRow = ({ hourToRender, calendarDay, index }) => {
   let backgroundColor = index % 2 === 0 ? "lightgrey" : "darkgrey";
   let hourHasCurrentBooking = false;
-  for (const booking of dateToDisplay.bookingsOnThisDay){
+  for (const booking of calendarDay.bookingsOnThisDay){
     if (
       isBetween(
         hourToRender,
@@ -16,7 +16,7 @@ export const BookingsTableRow = ({ hourToRender, dateToDisplay, index }) => {
     }
   }
   let newBookingColor = "initial";
-  for (const booking of dateToDisplay.csvBookingsOnThisDay){
+  for (const booking of calendarDay.csvBookingsOnThisDay){
     if (
       isBetween(
         hourToRender,

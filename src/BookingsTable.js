@@ -1,10 +1,10 @@
 import React from "react";
 import { BookingsTableRow } from "./BookingsTableRow";
 
-export const BookingsTable = ({ datesToDisplay }) => {
+export const BookingsTable = ({ calendarDays }) => {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
-      {datesToDisplay.map((dateToDisplay, index) => {
+      {calendarDays.map((calendarDay, index) => {
         return (
           <div
             key={index}
@@ -15,7 +15,7 @@ export const BookingsTable = ({ datesToDisplay }) => {
               backgroundColor: "mediumgrey",
             }}
           >
-            {dateToDisplay.timelineDate.format("L")}
+            {calendarDay.day.format("L")}
             <table
               style={{
                 display: "flex",
@@ -24,12 +24,12 @@ export const BookingsTable = ({ datesToDisplay }) => {
               }}
             >
               <tbody>
-                {dateToDisplay.hours.map((hourToRender, index) => {
+                {calendarDay.hours.map((hourToRender, index) => {
                   return (
                     <BookingsTableRow
                       key={index}
                       hourToRender={hourToRender}
-                      dateToDisplay={dateToDisplay}
+                      calendarDay={calendarDay}
                       index={index}
                     ></BookingsTableRow>
                   );
