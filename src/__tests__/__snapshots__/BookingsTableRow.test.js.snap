@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<tr
+  style={
+    Object {
+      "backgroundColor": "darkgrey",
+    }
+  }
+>
+  <td>
+    12:00 AM
+  </td>
+  <td
+    style={
+      Object {
+        "backgroundColor": "initial",
+        "width": "100px",
+      }
+    }
+  />
+  <td
+    style={
+      Object {
+        "backgroundColor": "initial",
+        "width": "100px",
+      }
+    }
+  />
+</tr>
+`;
