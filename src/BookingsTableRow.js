@@ -24,6 +24,7 @@ export const BookingsTableRow = ({ hourToRender, calendarDay, index }) => {
     <tr style={{ backgroundColor }}>
       <td>{hourToRender.format("LT")}</td>
       <td
+        data-testid="current-booking"
         style={{
           width: "100px",
           backgroundColor: hourHasCurrentBooking ? "green" : "initial",

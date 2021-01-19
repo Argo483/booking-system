@@ -9,12 +9,13 @@ exports[`renders correctly 1`] = `
   }
 >
   <td>
-    12:00 AM
+    2:00 AM
   </td>
   <td
+    data-testid="current-booking"
     style={
       Object {
-        "backgroundColor": "initial",
+        "backgroundColor": "green",
         "width": "100px",
       }
     }
@@ -22,7 +23,7 @@ exports[`renders correctly 1`] = `
   <td
     style={
       Object {
-        "backgroundColor": "initial",
+        "backgroundColor": "green",
         "width": "100px",
       }
     }

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
     "axios": "^0.21.1",
     "cors": "^2.8.4",
     "eslint": "^7.17.0",
@@ -19,10 +20,11 @@
     "server": "node server/index.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --coverage=true",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "@testing-library/react": "^11.2.3",
     "prettier": "2.2.1"
   }
 }

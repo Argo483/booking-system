@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render multiple calendar days 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "mediumgrey",
+        "margin": "5px",
+        "padding": "10px",
+        "width": "1000px",
+      }
+    }
+  >
+    10/31/2011
+    <table
+      style={
+        Object {
+          "backgroundColor": "grey",
+          "display": "flex",
+          "flexDirection": "column",
+        }
+      }
+    >
+      <tbody>
+        <tr
+          style={
+            Object {
+              "backgroundColor": "lightgrey",
+            }
+          }
+        >
+          <td>
+            1:00 AM
+          </td>
+          <td
+            data-testid="current-booking"
+            style={
+              Object {
+                "backgroundColor": "initial",
+                "width": "100px",
+              }
+            }
+          />
+          <td
+            style={
+              Object {
+                "backgroundColor": "initial",
+                "width": "100px",
+              }
+            }
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    style={
+      Object {
+        "backgroundColor": "mediumgrey",
+        "margin": "5px",
+        "padding": "10px",
+        "width": "1000px",
+      }
+    }
+  >
+    10/31/2011
+    <table
+      style={
+        Object {
+          "backgroundColor": "grey",
+          "display": "flex",
+          "flexDirection": "column",
+        }
+      }
+    >
+      <tbody>
+        <tr
+          style={
+            Object {
+              "backgroundColor": "lightgrey",
+            }
+          }
+        >
+          <td>
+            1:00 AM
+          </td>
+          <td
+            data-testid="current-booking"
+            style={
+              Object {
+                "backgroundColor": "initial",
+                "width": "100px",
+              }
+            }
+          />
+          <td
+            style={
+              Object {
+                "backgroundColor": "initial",
+                "width": "100px",
+              }
+            }
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
