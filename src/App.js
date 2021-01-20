@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Dropzone from "react-dropzone";
 import Papa from "papaparse";
-import axios from "axios";
 import "./App.css";
 import { BookingsTable } from "./BookingsTable";
+import { BookingsList } from "./BookingsList";
 import { getCalendarDays } from "./getCalendarDays";
+import { fetchBookings, postBookings } from "./apiRequests";
 
-const apiUrl = "http://localhost:3001";
 
 class App extends Component {
   state = {};
@@ -19,18 +19,19 @@ class App extends Component {
     };
   }
 
-  fetchBookings = () => {
-    fetch(`${apiUrl}/bookings`)
-      .then((response) => response.json())
-      .then((bookings) => {
-        bookings.forEach((booking) => {
-          booking.duration = booking.duration / (60 * 1000);
-        });
-        this.setState({ bookings });
-      });
+  fetchBookings = async () => {
+
+    const bookings = await fetchBookings(); 
+    console.log("blah2");
+    bookings.forEach((booking) => {
+      booking.duration = booking.duration / (60 * 1000);
+    });
+    this.setState({ bookings });
+    console.log(this.state.bookings);
   };
 
-  componentWillMount = () => {
+  componentDidMount = () => {
+    console.log("blah");
     this.fetchBookings();
   };
 
@@ -72,16 +73,7 @@ class App extends Component {
       }
     }
     console.log(`posting ${bookingsToPost}`);
-    axios
-      .post(`${apiUrl}/bookings`, {
-        bookings: bookingsToPost,
-      })
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    postBookings(bookingsToPost);
   };
 
   onReloadBookingsClicked = () => {
@@ -100,28 +92,15 @@ class App extends Component {
         <button></button>
         <div className="App-header">
           <Dropzone accept=".csv" onDrop={this.onDrop}>
-            Drag files here
           </Dropzone>
         </div>
         <div className="App-main">
-          <p>Existing bookings:</p>
-          {(this.state.bookings || []).map((booking, i) => {
-            const date = new Date(booking.time);
-            return (
-              <p key={i} className="App-booking">
-                <span className="App-booking-time">{date.toString()}</span>
-                <span className="App-booking-duration">
-                  {booking.duration.toFixed(1)}
-                </span>
-                <span className="App-booking-user">{booking.userId}</span>
-              </p>
-            );
-          })}
+          <BookingsList bookings={this.state.bookings}/>
 
-          <button onClick={this.onSaveBookingsClicked}>
+          <button data-testid="save-bookings-button" onClick={this.onSaveBookingsClicked}>
             Save new bookings
           </button>
-          <button onClick={this.onReloadBookingsClicked}>
+          <button data-testid="reload-bookings-button" onClick={this.onReloadBookingsClicked}>
             Reload bookings
           </button>
           <p>Existing bookings timeline:</p>

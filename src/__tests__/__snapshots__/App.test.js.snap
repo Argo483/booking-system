@@ -1,0 +1,7047 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render app with bookings from fetch 1`] = `
+<div
+  className="App"
+>
+  <button />
+  <div
+    className="App-header"
+  >
+    <div
+      aria-disabled={false}
+      className=""
+      onClick={[Function]}
+      onDragEnter={[Function]}
+      onDragLeave={[Function]}
+      onDragOver={[Function]}
+      onDragStart={[Function]}
+      onDrop={[Function]}
+      style={
+        Object {
+          "borderColor": "#666",
+          "borderRadius": 5,
+          "borderStyle": "dashed",
+          "borderWidth": 2,
+          "height": 200,
+          "position": "relative",
+          "width": 200,
+        }
+      }
+    >
+      <input
+        accept=".csv"
+        autoComplete="off"
+        disabled={false}
+        multiple={true}
+        onChange={[Function]}
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "opacity": 0.00001,
+            "pointerEvents": "none",
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+        type="file"
+      />
+    </div>
+  </div>
+  <div
+    className="App-main"
+  >
+    <div>
+      <p>
+        Existing bookings:
+      </p>
+    </div>
+    <button
+      data-testid="save-bookings-button"
+      onClick={[Function]}
+    >
+      Save new bookings
+    </button>
+    <button
+      data-testid="reload-bookings-button"
+      onClick={[Function]}
+    >
+      Reload bookings
+    </button>
+    <p>
+      Existing bookings timeline:
+    </p>
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "flexDirection": "column",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "backgroundColor": "mediumgrey",
+            "margin": "5px",
+            "padding": "10px",
+            "width": "1000px",
+          }
+        }
+      >
+        03/01/2018
+        <table
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "display": "flex",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <tbody>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        style={
+          Object {
+            "backgroundColor": "mediumgrey",
+            "margin": "5px",
+            "padding": "10px",
+            "width": "1000px",
+          }
+        }
+      >
+        03/02/2018
+        <table
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "display": "flex",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <tbody>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        style={
+          Object {
+            "backgroundColor": "mediumgrey",
+            "margin": "5px",
+            "padding": "10px",
+            "width": "1000px",
+          }
+        }
+      >
+        03/03/2018
+        <table
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "display": "flex",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <tbody>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        style={
+          Object {
+            "backgroundColor": "mediumgrey",
+            "margin": "5px",
+            "padding": "10px",
+            "width": "1000px",
+          }
+        }
+      >
+        03/04/2018
+        <table
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "display": "flex",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <tbody>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        style={
+          Object {
+            "backgroundColor": "mediumgrey",
+            "margin": "5px",
+            "padding": "10px",
+            "width": "1000px",
+          }
+        }
+      >
+        03/05/2018
+        <table
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "display": "flex",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <tbody>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        style={
+          Object {
+            "backgroundColor": "mediumgrey",
+            "margin": "5px",
+            "padding": "10px",
+            "width": "1000px",
+          }
+        }
+      >
+        03/06/2018
+        <table
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "display": "flex",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <tbody>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        style={
+          Object {
+            "backgroundColor": "mediumgrey",
+            "margin": "5px",
+            "padding": "10px",
+            "width": "1000px",
+          }
+        }
+      >
+        03/07/2018
+        <table
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "display": "flex",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <tbody>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        style={
+          Object {
+            "backgroundColor": "mediumgrey",
+            "margin": "5px",
+            "padding": "10px",
+            "width": "1000px",
+          }
+        }
+      >
+        03/08/2018
+        <table
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "display": "flex",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <tbody>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        style={
+          Object {
+            "backgroundColor": "mediumgrey",
+            "margin": "5px",
+            "padding": "10px",
+            "width": "1000px",
+          }
+        }
+      >
+        03/09/2018
+        <table
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "display": "flex",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <tbody>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        style={
+          Object {
+            "backgroundColor": "mediumgrey",
+            "margin": "5px",
+            "padding": "10px",
+            "width": "1000px",
+          }
+        }
+      >
+        03/10/2018
+        <table
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "display": "flex",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <tbody>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 AM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                12:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                1:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                2:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                3:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                4:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                5:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                6:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                7:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                8:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                9:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "lightgrey",
+                }
+              }
+            >
+              <td>
+                10:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+            <tr
+              style={
+                Object {
+                  "backgroundColor": "darkgrey",
+                }
+              }
+            >
+              <td>
+                11:00 PM
+              </td>
+              <td
+                data-testid="current-booking"
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+              <td
+                style={
+                  Object {
+                    "backgroundColor": "initial",
+                    "width": "100px",
+                  }
+                }
+              />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;
