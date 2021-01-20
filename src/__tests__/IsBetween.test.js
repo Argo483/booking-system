@@ -1,4 +1,4 @@
-import {isBetween} from "../IsBetween";
+import {isBetween} from "../isBetween";
 import moment from "moment";
 
 it("should return true if first parameter is between second and third", ()=>{

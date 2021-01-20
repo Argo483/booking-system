@@ -15,7 +15,7 @@ exports[`should render multiple calendar days 1`] = `
         "backgroundColor": "mediumgrey",
         "margin": "5px",
         "padding": "10px",
-        "width": "1000px",
+        "width": "300px",
       }
     }
   >
@@ -67,7 +67,7 @@ exports[`should render multiple calendar days 1`] = `
         "backgroundColor": "mediumgrey",
         "margin": "5px",
         "padding": "10px",
-        "width": "1000px",
+        "width": "300px",
       }
     }
   >

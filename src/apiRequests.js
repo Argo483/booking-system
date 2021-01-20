@@ -7,15 +7,14 @@ export async function getBookings() {
   return response.data;
 }
 
-export function postBookings(bookings) {
-  axios
-    .post(`${apiUrl}/bookings`, {
+export async function postBookings(bookings) {
+  try {
+    await axios.post(`${apiUrl}/bookings`, {
       bookings,
-    })
-    .then(function (response) {
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.error(error);
     });
+    
+    
+  } catch (error) {
+    console.error(error);
+  }
 }

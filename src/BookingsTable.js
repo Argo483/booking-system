@@ -9,7 +9,7 @@ export const BookingsTable = ({ calendarDays }) => {
           <div
             key={index}
             style={{
-              width: "1000px",
+              width: "300px",
               margin: "5px",
               padding: "10px",
               backgroundColor: "mediumgrey",

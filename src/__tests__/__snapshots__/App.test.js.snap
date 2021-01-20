@@ -87,7 +87,7 @@ exports[`should render app with bookings from fetch 1`] = `
             "backgroundColor": "mediumgrey",
             "margin": "5px",
             "padding": "10px",
-            "width": "1000px",
+            "width": "300px",
           }
         }
       >
@@ -783,7 +783,7 @@ exports[`should render app with bookings from fetch 1`] = `
             "backgroundColor": "mediumgrey",
             "margin": "5px",
             "padding": "10px",
-            "width": "1000px",
+            "width": "300px",
           }
         }
       >
@@ -1479,7 +1479,7 @@ exports[`should render app with bookings from fetch 1`] = `
             "backgroundColor": "mediumgrey",
             "margin": "5px",
             "padding": "10px",
-            "width": "1000px",
+            "width": "300px",
           }
         }
       >
@@ -2175,7 +2175,7 @@ exports[`should render app with bookings from fetch 1`] = `
             "backgroundColor": "mediumgrey",
             "margin": "5px",
             "padding": "10px",
-            "width": "1000px",
+            "width": "300px",
           }
         }
       >
@@ -2871,7 +2871,7 @@ exports[`should render app with bookings from fetch 1`] = `
             "backgroundColor": "mediumgrey",
             "margin": "5px",
             "padding": "10px",
-            "width": "1000px",
+            "width": "300px",
           }
         }
       >
@@ -3567,7 +3567,7 @@ exports[`should render app with bookings from fetch 1`] = `
             "backgroundColor": "mediumgrey",
             "margin": "5px",
             "padding": "10px",
-            "width": "1000px",
+            "width": "300px",
           }
         }
       >
@@ -4263,7 +4263,7 @@ exports[`should render app with bookings from fetch 1`] = `
             "backgroundColor": "mediumgrey",
             "margin": "5px",
             "padding": "10px",
-            "width": "1000px",
+            "width": "300px",
           }
         }
       >
@@ -4959,7 +4959,7 @@ exports[`should render app with bookings from fetch 1`] = `
             "backgroundColor": "mediumgrey",
             "margin": "5px",
             "padding": "10px",
-            "width": "1000px",
+            "width": "300px",
           }
         }
       >
@@ -5655,7 +5655,7 @@ exports[`should render app with bookings from fetch 1`] = `
             "backgroundColor": "mediumgrey",
             "margin": "5px",
             "padding": "10px",
-            "width": "1000px",
+            "width": "300px",
           }
         }
       >
@@ -6351,7 +6351,7 @@ exports[`should render app with bookings from fetch 1`] = `
             "backgroundColor": "mediumgrey",
             "margin": "5px",
             "padding": "10px",
-            "width": "1000px",
+            "width": "300px",
           }
         }
       >

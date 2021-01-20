@@ -6,9 +6,8 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(cors()); // so that app can access
 
-const convertBookingToStorageFormat = (bookingRecord) => {};
 
-let bookings = JSON.parse(fs.readFileSync("./server/bookings.json")).map(() => {
+let bookings = JSON.parse(fs.readFileSync("./server/bookings.json")).map((bookingRecord) => {
   return {
     time: Date.parse(bookingRecord.time),
     duration: bookingRecord.duration * 60 * 1000, // mins into ms

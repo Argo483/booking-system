@@ -1,5 +1,5 @@
 import React from "react";
-import { isBetween } from "./IsBetween";
+import { isBetween } from "./isBetween";
 import PropTypes from "prop-types";
 
 export const BookingsTableRow = ({ hourToRender, calendarDay, index }) => {
