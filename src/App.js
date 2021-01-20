@@ -109,9 +109,8 @@ class App extends Component {
 
     return (
       <div className="App">
-        <button></button>
         <div className="App-header">
-          <Dropzone accept=".csv" onDrop={this.onDrop}></Dropzone>
+          <Dropzone accept=".csv" onDrop={this.onDrop}>Drop file here</Dropzone>
         </div>
         <div className="App-main">
           <BookingsList bookings={this.state.bookings} />

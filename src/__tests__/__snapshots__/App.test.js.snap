@@ -4,7 +4,6 @@ exports[`should render app with bookings from fetch 1`] = `
 <div
   className="App"
 >
-  <button />
   <div
     className="App-header"
   >
@@ -29,6 +28,7 @@ exports[`should render app with bookings from fetch 1`] = `
         }
       }
     >
+      Drop file here
       <input
         accept=".csv"
         autoComplete="off"
