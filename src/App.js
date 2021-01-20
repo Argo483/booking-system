@@ -5,7 +5,7 @@ import "./App.css";
 import { BookingsTable } from "./BookingsTable";
 import { BookingsList } from "./BookingsList";
 import { getCalendarDays } from "./getCalendarDays";
-import { fetchBookings, postBookings } from "./apiRequests";
+import { getBookings, postBookings } from "./apiRequests";
 
 
 class App extends Component {
@@ -19,20 +19,17 @@ class App extends Component {
     };
   }
 
-  fetchBookings = async () => {
+  getBookings = async () => {
 
-    const bookings = await fetchBookings(); 
-    console.log("blah2");
+    const bookings = await getBookings(); 
     bookings.forEach((booking) => {
       booking.duration = booking.duration / (60 * 1000);
     });
     this.setState({ bookings });
-    console.log(this.state.bookings);
   };
 
   componentDidMount = () => {
-    console.log("blah");
-    this.fetchBookings();
+    this.getBookings();
   };
 
   onCsvParse = (results) => {
@@ -52,12 +49,9 @@ class App extends Component {
     }
 
     this.setState({ csvBookings });
-    console.log(this.state);
   };
 
   onDrop = (files) => {
-    console.log(files);
-
     Papa.parse(files[0], {
       complete: this.onCsvParse,
     });
@@ -72,13 +66,12 @@ class App extends Component {
         }
       }
     }
-    console.log(`posting ${bookingsToPost}`);
     postBookings(bookingsToPost);
   };
 
   onReloadBookingsClicked = () => {
     this.setState({ bookings: [], csvBookings: [] });
-    this.fetchBookings();
+    this.getBookings();
   };
 
   render() {

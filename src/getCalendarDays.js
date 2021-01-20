@@ -42,7 +42,6 @@ const getBookingsOnDate = (bookings, date) => {
       matchingBookings.push({ startTime, endTime });
     }
   }
-  // console.log(matchingBookings);
   return matchingBookings;
 };
 

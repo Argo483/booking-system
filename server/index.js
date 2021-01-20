@@ -17,7 +17,6 @@ let bookings = JSON.parse(fs.readFileSync("./server/bookings.json")).map(() => {
 });
 
 app.get("/bookings", (_, res) => {
-  console.log(`get: ${bookings}`);
   res.json(bookings);
 });
 
@@ -30,7 +29,6 @@ const isValidBody = (body) => {
       isNaN(booking.duration) ||
       typeof booking.userId !== "string"
     ) {
-      console.log(`invalid booking: ${booking}`);
       return false;
     }
   }
@@ -39,7 +37,6 @@ const isValidBody = (body) => {
 
 app.post("/bookings", (request, response) => {
   if (isValidBody(request.body)) {
-    console.log(request.body.bookings);
     bookings = request.body.bookings.map((bookingRecord) => {
       return {
         time: bookingRecord.time,

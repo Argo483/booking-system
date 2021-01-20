@@ -7,32 +7,20 @@ import App from "../App";
 import * as apiRequests from "../apiRequests";
 import * as DropZone from "react-dropzone";
 
-const fetchBookingsResult = [{ time: 2318938183, duration: 18000, userId: "1" }];
+const getBookingsResult = [{ time: 2318938183, duration: 18000, userId: "1" }];
 
-const fetchBookingsSpy = jest
-  .spyOn(apiRequests, "fetchBookings")
+const getBookingsSpy = jest
+  .spyOn(apiRequests, "getBookings")
   .mockImplementation(() => {
-    return fetchBookingsResult;
+    return getBookingsResult;
   });
 
 const postBookingsSpy = jest
   .spyOn(apiRequests, "postBookings")
   .mockImplementation(() => {});
-// const dropzoneSpy = jest
-//   .spyOn(DropZone, "DropZone")
-//   .mockImplementation(() => {
-//     return <div />;
-//   });
-
-// beforeEach(() => {
-//   jest.mock("../apiRequests", () => ({
-//     fetchBookings: jest.fn(),
-//     postBookings: jest.fn(),
-//   }));
-// });
 
 afterEach(() => {
-    fetchBookingsSpy.mockClear()
+    getBookingsSpy.mockClear()
 });
 const fetchResponseReceived = () => new Promise(setImmediate);
 
@@ -46,15 +34,15 @@ it("when user clicks save bookings, it should send the current bookings in a pos
   await fetchResponseReceived();
   screen.getByTestId("save-bookings-button").click();
   expect(postBookingsSpy).toHaveBeenCalled();
-  expect(postBookingsSpy).toHaveBeenCalledWith(fetchBookingsResult);
+  expect(postBookingsSpy).toHaveBeenCalledWith(getBookingsResult);
 });
 
 
 it("reload bookings button should fetch bookings again", async () => {
     render(<App></App>);
     await fetchResponseReceived();
-    expect(fetchBookingsSpy).toHaveBeenCalledTimes(1);
+    expect(getBookingsSpy).toHaveBeenCalledTimes(1);
     screen.getByTestId("reload-bookings-button").click();
-    expect(fetchBookingsSpy).toHaveBeenCalledTimes(2);
+    expect(getBookingsSpy).toHaveBeenCalledTimes(2);
   });
   

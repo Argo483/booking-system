@@ -2,9 +2,9 @@ import axios from "axios";
 
 const apiUrl = "http://localhost:3001";
 
-export async function fetchBookings() {
-  const response = await fetch(`${apiUrl}/bookings`);
-  return response.json();
+export async function getBookings() {
+  const response = await axios.get(`${apiUrl}/bookings`);
+  return response.data;
 }
 
 export function postBookings(bookings) {
@@ -16,6 +16,6 @@ export function postBookings(bookings) {
       console.log(response);
     })
     .catch(function (error) {
-      console.log(error);
+      console.error(error);
     });
 }
